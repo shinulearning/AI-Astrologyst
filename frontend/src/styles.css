@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.20), transparent 32%),
+    linear-gradient(180deg, #0b1220 0%, #111827 100%);
+  color: #eef2ff;
+}
+
+body {
+  padding: 0;
+}
+
+.app {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 28px 24px 48px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 26px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 32px 90px rgba(4, 7, 26, 0.35);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  box-shadow: 0 24px 60px rgba(124, 58, 237, 0.26);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.65rem;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  color: #c7d2fe;
+  font-size: 0.95rem;
+}
+
+nav a {
+  color: #a5b4fc;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.main-content {
+  margin-top: 34px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 28px;
+  box-shadow: 0 40px 120px rgba(4, 7, 26, 0.3);
+  padding: 32px;
+}
+
+.form-card {
+  margin: 0 auto;
+}
+
+.form-header {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a78bfa;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  line-height: 1.05;
+}
+
+.form-note {
+  margin: 0;
+  color: #c7d2fe;
+  max-width: 840px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.alert {
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(248, 113, 113, 0.14);
+  border: 1px solid rgba(248, 113, 113, 0.22);
+  color: #fee2e2;
+  margin-bottom: 22px;
+}
+
+.form {
+  display: grid;
+  gap: 22px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 860px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: grid;
+  gap: 10px;
+  color: #e0e7ff;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.88);
+  color: #eef2ff;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.18);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  color: #fff;
+  padding: 16px 26px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 18px 50px rgba(33, 150, 243, 0.24);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.report-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+@media (max-width: 860px) {
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.report-card {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 22px;
+}
+
+.report-card h3 {
+  margin-top: 0;
+}
+
+p,
+.report-card li {
+  color: #c7d2fe;
+  line-height: 1.7;
+}
+
+.report-list {
+  padding-left: 18px;
+  margin: 10px 0 0;
+}
+
+.report-list li {
+  margin-bottom: 10px;
+}
