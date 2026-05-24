@@ -8,10 +8,10 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <div className="logo">☀️</div>
+          <img className="brand-logo" src="/shinu-logo.svg" alt="ShinuAiLabs Logo" />
           <div>
-            <h1>AI Astrologyst</h1>
-            <p className="tagline">Beautiful astrology reports from your birth chart details.</p>
+            <h1>ShinuAiLabs AI Astrologyst</h1>
+            <p className="tagline">Your personalized celestial insights and karmic guidance.</p>
           </div>
         </div>
         <nav>

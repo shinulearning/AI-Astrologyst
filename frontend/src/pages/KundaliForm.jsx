@@ -48,7 +48,7 @@ export default function KundaliForm() {
     <div className="card form-card">
       <div className="form-header">
         <span className="eyebrow">Celestial Insights</span>
-        <h2>Generate your personalized kundali report</h2>
+        <h2>Generate your personalized astrology report</h2>
         <p className="form-note">Enter your birth details and receive a beautiful, intuitive astrology summary.</p>
       </div>
 
