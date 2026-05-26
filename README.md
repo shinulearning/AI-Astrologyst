@@ -24,3 +24,9 @@ npm run dev
 ```
 
 Open `http://localhost:5173` for the frontend and `http://127.0.0.1:5000` for the API.
+
+## Deployment notes
+
+- The frontend now uses `HashRouter` to avoid 404s on refresh or direct navigation when deployed to Vercel.
+- A `frontend/vercel.json` rewrite is also added so SPA routes are served from `index.html`.
+- If you want clean URLs (`/report` instead of `/#/report`), keep the rewrite and switch back to `BrowserRouter`.
